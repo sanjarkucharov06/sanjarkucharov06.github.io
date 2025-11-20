@@ -1,0 +1,97 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif; 
+  background-color: #f2f4f8; 
+  color: #222;
+  line-height: 1.6;
+  padding: 24px;
+}
+
+header {
+  background-color: #3a4750; 
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 2.0rem;  
+  margin-bottom: 6px;
+}
+
+.tagline strong {
+  color: #ffd166;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem; 
+  color: #2b3940;
+  margin-bottom: 8px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.mood-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mood-grid figure {
+  width: 300px;
+  background: white;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center; 
+}
+
+.mood-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 6px;
+}
+
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #github {
+    grid-column: 1 / -1;
+  }
+}
